@@ -13,8 +13,6 @@ spec:
       labels:
         app: backend-todo
     spec:
-      imagePullSecrets:
-        - name: ghcr-secret
       containers:
         - name: backend-todo 
           image: ghcr.io/kust1q/backend:2.0

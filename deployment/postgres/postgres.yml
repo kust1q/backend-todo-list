@@ -16,7 +16,7 @@ spec:
       volumes:
       containers:
         - name: postgres
-          image: postgres:13
+          image: postgres:15
           imagePullPolicy: IfNotPresent
           resources:
             limits:
