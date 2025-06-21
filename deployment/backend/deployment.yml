@@ -33,13 +33,17 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: do
-            - name: DATABASE_USER
+            - name: SPRING_DATASOURCE_USERNAME
               value: program
-            - name: DATABASE_PASSWORD
+            - name: DATABASE_PASSWORDSPRING_DATASOURCE_PASSWORD
               value: test
             - name: DATABASE_PORT
               value: '5432'
-            - name: DATABASE_URL
+            - name: SPRING_DATASOURCE_URL
               value: postgres.practice.svc.cluster.local
             - name: DATABASE_NAME
               value: todo_list
+            - name: SPRING_DATASOURCE_DRIVER-CLASS-NAME
+              value: org.postgresql.Driver
+            - name: SPRING_JPA_DATABASE-PLATFORM
+              value: org.hibernate.dialect.PostgreSQLDialect
