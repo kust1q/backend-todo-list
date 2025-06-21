@@ -16,7 +16,7 @@ spec:
       imagePullSecrets:
         - name: ghcr-secret
       containers:
-        - name: backend-todo
+        - name: backend-todo 
           image: ghcr.io/kust1q/backend:2.0
           imagePullPolicy: IfNotPresent
           resources:
@@ -33,17 +33,13 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: do
-            - name: SPRING_DATASOURCE_USERNAME
+            - name: DATABASE_USER
               value: program
-            - name: DATABASE_PASSWORDSPRING_DATASOURCE_PASSWORD
+            - name: DATABASE_PASSWORD
               value: test
             - name: DATABASE_PORT
               value: '5432'
-            - name: SPRING_DATASOURCE_URL
+            - name: DATABASE_URL
               value: postgres.practice.svc.cluster.local
             - name: DATABASE_NAME
               value: todo_list
-            - name: SPRING_DATASOURCE_DRIVER-CLASS-NAME
-              value: org.postgresql.Driver
-            - name: SPRING_JPA_DATABASE-PLATFORM
-              value: org.hibernate.dialect.PostgreSQLDialect
