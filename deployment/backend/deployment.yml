@@ -38,10 +38,8 @@ spec:
             - name: DATABASE_PASSWORD
               value: test
             - name: DATABASE_PORT
-              value: '5432'
+              value: 5432
             - name: DATABASE_URL
               value: jdbc:postgresql://postgres.practice.svc.cluster.local:5432/todo_list
             - name: DATABASE_NAME
-              value: todo_list 
-            - name: SPRING_DATASOURCE_DRIVER-CLASS-NAME
-              value: org.postgresql.Driver
+              value: todo_list
