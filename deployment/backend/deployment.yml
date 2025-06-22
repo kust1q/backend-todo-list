@@ -32,7 +32,7 @@ spec:
             - name: SPRING_PROFILES_ACTIVE
               value: do
             - name: SPRING_DATASOURCE_URL
-              value: "jdbc:postgresql://postgres-service:5432/todo_list"
+              value: "jdbc:postgresql://postgres:5432/todo_list"
             - name: SPRING_DATASOURCE_USERNAME
               value: "dbuser"
             - name: SPRING_DATASOURCE_PASSWORD
@@ -40,7 +40,7 @@ spec:
             - name: SPRING_DATASOURCE_DRIVER_CLASS_NAME
               value: "org.postgresql.Driver"
             - name: POSTGRES_SERVICE
-              value: "postgres-service" 
+              value: "postgres" 
             - name: DATABASE_USER
               value: program
             - name: DATABASE_PASSWORD
