@@ -51,3 +51,5 @@ spec:
               value: postgres.practice.svc.cluster.local
             - name: DATABASE_NAME
               value: todo_list
+            - name: SPRING_JPA_HIBERNATE_DDL_AUTO
+              value: "update"
