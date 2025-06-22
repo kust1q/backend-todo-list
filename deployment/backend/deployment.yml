@@ -13,8 +13,6 @@ spec:
       labels:
         app: backend-todo
     spec:
-      imagePullSecrets:
-        - name: ghcr-secret
       containers:
         - name: backend-todo 
           image: ghcr.io/kust1q/backend:2.0
@@ -38,7 +36,7 @@ spec:
             - name: DATABASE_PASSWORD
               value: test
             - name: DATABASE_PORT
-              value: 5432
+              value: '5432'
             - name: DATABASE_URL
               value: postgres.practice.svc.cluster.local
             - name: DATABASE_NAME
