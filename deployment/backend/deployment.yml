@@ -31,6 +31,14 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: do
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:postgresql://postgres-service:5432/todo_list"
+            - name: SPRING_DATASOURCE_USERNAME
+              value: "dbuser"
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: "dbpassword"
+            - name: SPRING_DATASOURCE_DRIVER_CLASS_NAME
+              value: "org.postgresql.Driver"
             - name: POSTGRES_SERVICE
               value: "postgres-service" 
             - name: DATABASE_USER
