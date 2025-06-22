@@ -34,9 +34,9 @@ spec:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:postgresql://postgres:5432/todo_list"
             - name: SPRING_DATASOURCE_USERNAME
-              value: "dbuser"
+              value: "program"
             - name: SPRING_DATASOURCE_PASSWORD
-              value: "dbpassword"
+              value: "test"
             - name: SPRING_DATASOURCE_DRIVER_CLASS_NAME
               value: "org.postgresql.Driver"
             - name: POSTGRES_SERVICE
