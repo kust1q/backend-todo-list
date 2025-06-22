@@ -31,6 +31,8 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: do
+            - name: POSTGRES_SERVICE
+              value: "postgres-service" 
             - name: DATABASE_USER
               value: program
             - name: DATABASE_PASSWORD
